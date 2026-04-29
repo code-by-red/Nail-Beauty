@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Designer | Luxo e Elegância</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nail Designer</h1>
+            <p class="hero-subtitle">Elegância que define seu estilo</p>
+            <button class="cta-button" onclick="scrollToServices()">Agendar agora</button>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <main class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Selecione os serviços desejados para seu agendamento</p>
+            
+            <div class="services-grid">
+                <!-- Service Cards -->
+                <div class="service-card">
+                    <input type="checkbox" id="alongamento" class="service-checkbox" onchange="updateSummary()">
+                    <label for="alongamento" class="service-label">
+                        <div class="service-icon">✨</div>
+                        <h3 class="service-name">Alongamento em Gel</h3>
+                        <p class="service-description">Unhas alongadas com técnica premium em gel</p>
+                        <div class="service-price">R$ 120</div>
+                    </label>
+                </div>
+
+                <div class="service-card">
+                    <input type="checkbox" id="manutencao" class="service-checkbox" onchange="updateSummary()">
+                    <label for="manutencao" class="service-label">
+                        <div class="service-icon">💅</div>
+                        <h3 class="service-name">Manutenção</h3>
+                        <p class="service-description">Manutenção semanal do alongamento</p>
+                        <div class="service-price">R$ 80</div>
+                    </label>
+                </div>
+
+                <div class="service-card">
+                    <input type="checkbox" id="esmaltacao" class="service-checkbox" onchange="updateSummary()">
+                    <label for="esmaltacao" class="service-label">
+                        <div class="service-icon">🎨</div>
+                        <h3 class="service-name">Esmaltação em Gel</h3>
+                        <p class="service-description">Esmaltação duradoura nas unhas naturais</p>
+                        <div class="service-price">R$ 60</div>
+                    </label>
+                </div>
+
+                <div class="service-card">
+                    <input type="checkbox" id="nailart" class="service-checkbox" onchange="updateSummary()">
+                    <label for="nailart" class="service-label">
+                        <div class="service-icon">💎</div>
+                        <h3 class="service-name">Nail Art</h3>
+                        <p class="service-description">Arte personalizada e detalhes exclusivos</p>
+                        <div class="service-price">R$ 40</div>
+                    </label>
+                </div>
+
+                <div class="service-card">
+                    <input type="checkbox" id="podologia" class="service-checkbox" onchange="updateSummary()">
+                    <label for="podologia" class="service-label">
+                        <div class="service-icon">🦶</div>
+                        <h3 class="service-name">Podologia</h3>
+                        <p class="service-description">Tratamento especializado para os pés</p>
+                        <div class="service-price">R$ 70</div>
+                    </label>
+                </div>
+
+                <div class="service-card">
+                    <input type="checkbox" id="spa" class="service-checkbox" onchange="updateSummary()">
+                    <label for="spa" class="service-label">
+                        <div class="service-icon">🌸</div>
+                        <h3 class="service-name">Spa das Mãos</h3>
+                        <p class="service-description">Hidratação e tratamento premium</p>
+                        <div class="service-price">R$ 50</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="container">
+            <div class="summary-card">
+                <h3 class="summary-title">Seu Agendamento</h3>
+                <div id="selectedServices" class="selected-services">
+                    <p class="empty-message">Nenhum serviço selecionado</p>
+                </div>
+                <div class="total-price" id="totalPrice" style="display: none;">
+                    <span>Total: </span>
+                    <span class="price-value">R$ 0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button Section -->
+    <section class="whatsapp-section">
+        <div class="container">
+            <button id="whatsappButton" class="whatsapp-button" onclick="sendToWhatsApp()" disabled>
+                <span class="whatsapp-icon">📱</span>
+                <span class="button-text">Agendar via WhatsApp</span>
+            </button>
+            
+            <div class="disclaimer">
+                <p>O agendamento é de total responsabilidade do profissional. Este sistema serve apenas para agilizar o atendimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nail Designer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

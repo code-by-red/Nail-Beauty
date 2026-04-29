@@ -1,0 +1,29 @@
+{
+  "name": "beauty-nails-site",
+  "version": "1.0.0",
+  "description": "Site premium para Beauty Nails com tema claro, elegante e interativo",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Build completed - Static site ready'"
+  },
+  "keywords": [
+    "nail",
+    "designer",
+    "beauty",
+    "premium",
+    "website",
+    "static",
+    "vercel"
+  ],
+  "author": "Beauty Nails Studio",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

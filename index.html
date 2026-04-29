@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Nails - Studio Premium</title>
+    <link rel="stylesheet" href="public/css/minimal-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header Minimalista -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>BEAUTY NAILS</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#estudio">Estúdio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-emojis">
+            <div class="emoji-row">💅 💎 ✨ 💅 💎 ✨ 💅 💎</div>
+            <div class="emoji-row">🌸 🌷 🌹 🌸 🌷 🌹 🌸 🌷</div>
+            <div class="emoji-row">💅 💎 ✨ 💅 💎 ✨ 💅 💎</div>
+        </div>
+        <div class="hero-content">
+            <h2>SEJA BEM VINDA!</h2>
+            <p>Studio de unhas premium em São Paulo</p>
+        </div>
+    </section>
+
+    <!-- Seção About - Layout Clean -->
+    <section class="about-section" id="estudio">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Estúdio</h2>
+                    <p>O Beauty Nails é um studio especializado em beleza das mãos, oferecendo serviços de alta qualidade com produtos premium e técnica avançada. Nossa missão é realçar a beleza natural de cada cliente com atenção aos detalhes e atendimento personalizado.</p>
+                    <p>Com ambiente sofisticado e equipe qualificada, criamos experiências únicas que transformam cuidados em momentos de bem-estar e autoestima.</p>
+                </div>
+                <div class="about-emojis">
+                    <div class="emoji-card">
+                        <div class="emoji-icon">💅</div>
+                        <h4>Arte</h4>
+                        <p>Design exclusivo</p>
+                    </div>
+                    <div class="emoji-card">
+                        <div class="emoji-icon">💎</div>
+                        <h4>Premium</h4>
+                        <p>Qualidade superior</p>
+                    </div>
+                    <div class="emoji-card">
+                        <div class="emoji-icon">🌸</div>
+                        <h4>Elegância</h4>
+                        <p>Estilo sofisticado</p>
+                    </div>
+                    <div class="emoji-card">
+                        <div class="emoji-icon">✨</div>
+                        <h4>Brilho</h4>
+                        <p>Acabamento perfeito</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços - Estilo Portfólio -->
+    <section class="services-section" id="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-emoji">💅</div>
+                    <div class="service-overlay">
+                        <h3>Nail Art</h3>
+                        <p>Arte personalizada com designs exclusivos</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-emoji">🌟</div>
+                    <div class="service-overlay">
+                        <h3>Alongamento</h3>
+                        <p>Técnicas avançadas em gel e acrílico</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-emoji">💆‍♀️</div>
+                    <div class="service-overlay">
+                        <h3>Manicure</h3>
+                        <p>Tratamento completo para unhas naturais</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-emoji">🦶</div>
+                    <div class="service-overlay">
+                        <h3>Pedicure</h3>
+                        <p>Cuidados especializados para seus pés</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-emoji">🎨</div>
+                    <div class="service-overlay">
+                        <h3>Esmaltação</h3>
+                        <p>Cores tendência com acabamento perfeito</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-emoji">🌸</div>
+                    <div class="service-overlay">
+                        <h3>Spa das Mãos</h3>
+                        <p>Hidratação profunda e massagem relaxante</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Agendamento Interativa -->
+    <section class="booking-interactive" id="contato">
+        <div class="container">
+            <h2>ESCOLHA SEUS SERVIÇOS (PODE SELECIONAR MAIS DE UM)</h2>
+            
+            <!-- Lista de Serviços -->
+            <div class="services-list">
+                <div class="service-card" data-service="Alongamento em gel" data-price="120.00">
+                    <input type="checkbox" class="service-checkbox" id="service1">
+                    <div class="service-info">
+                        <div class="service-name">Alongamento em gel</div>
+                        <div class="service-price">R$ 120,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Manutenção" data-price="80.00">
+                    <input type="checkbox" class="service-checkbox" id="service2">
+                    <div class="service-info">
+                        <div class="service-name">Manutenção</div>
+                        <div class="service-price">R$ 80,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Esmaltação em gel" data-price="60.00">
+                    <input type="checkbox" class="service-checkbox" id="service3">
+                    <div class="service-info">
+                        <div class="service-name">Esmaltação em gel</div>
+                        <div class="service-price">R$ 60,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Nail art simples" data-price="20.00">
+                    <input type="checkbox" class="service-checkbox" id="service4">
+                    <div class="service-info">
+                        <div class="service-name">Nail art simples</div>
+                        <div class="service-price">R$ 20,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Nail art avançada" data-price="40.00">
+                    <input type="checkbox" class="service-checkbox" id="service5">
+                    <div class="service-info">
+                        <div class="service-name">Nail art avançada</div>
+                        <div class="service-price">R$ 40,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Blindagem" data-price="50.00">
+                    <input type="checkbox" class="service-checkbox" id="service6">
+                    <div class="service-info">
+                        <div class="service-name">Blindagem</div>
+                        <div class="service-price">R$ 50,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Spa dos pés" data-price="70.00">
+                    <input type="checkbox" class="service-checkbox" id="service7">
+                    <div class="service-info">
+                        <div class="service-name">Spa dos pés</div>
+                        <div class="service-price">R$ 70,00</div>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="Remoção de alongamento" data-price="30.00">
+                    <input type="checkbox" class="service-checkbox" id="service8">
+                    <div class="service-info">
+                        <div class="service-name">Remoção de alongamento</div>
+                        <div class="service-price">R$ 30,00</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Preferência de Data -->
+            <div class="date-section">
+                <h3 class="section-title">QUANDO VOCÊ PREFERE?</h3>
+                <div class="options-grid">
+                    <div class="option-card" data-date="Hoje">Hoje</div>
+                    <div class="option-card" data-date="Amanhã">Amanhã</div>
+                    <div class="option-card" data-date="Essa semana">Essa semana</div>
+                    <div class="option-card" data-date="Semana que vem">Semana que vem</div>
+                </div>
+            </div>
+            
+            <!-- Período -->
+            <div class="period-section">
+                <h3 class="section-title">QUAL PERÍODO?</h3>
+                <div class="options-grid">
+                    <div class="option-card" data-period="Manhã">Manhã</div>
+                    <div class="option-card" data-period="Tarde">Tarde</div>
+                    <div class="option-card" data-period="Noite">Noite</div>
+                </div>
+            </div>
+            
+            <!-- Resumo do Agendamento -->
+            <div class="booking-summary" id="bookingSummary">
+                <h3 class="summary-title">Resumo do agendamento</h3>
+                <div class="summary-content">
+                    <div class="summary-services">
+                        <h4>Serviços selecionados:</h4>
+                        <div id="selectedServicesList" class="services-list-display">
+                            <p class="empty-message">Nenhum serviço selecionado</p>
+                        </div>
+                    </div>
+                    <div class="summary-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Data:</span>
+                            <span id="selectedDateDisplay" class="detail-value">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Período:</span>
+                            <span id="selectedPeriodDisplay" class="detail-value">-</span>
+                        </div>
+                    </div>
+                    <div class="summary-total">
+                        <div class="total-label">Total:</div>
+                        <div class="total-value" id="totalValue">R$ 0,00</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botão WhatsApp -->
+            <div class="whatsapp-button-section">
+                <button class="whatsapp-button" id="whatsappBtn" disabled>AGENDAR VIA WHATSAPP</button>
+                <div class="booking-disclaimer">Nossa especialista irá te responder para confirmar o horário.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Clean -->
+    <section class="gallery-section" id="galeria">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-emoji">
+                    <div class="emoji-large">💅</div>
+                    <p>Nail Art</p>
+                </div>
+                <div class="gallery-emoji">
+                    <div class="emoji-large">💎</div>
+                    <p>Premium</p>
+                </div>
+                <div class="gallery-emoji">
+                    <div class="emoji-large">🌟</div>
+                    <p>Brilho</p>
+                </div>
+                <div class="gallery-emoji">
+                    <div class="emoji-large">🎨</div>
+                    <p>Arte</p>
+                </div>
+                <div class="gallery-emoji">
+                    <div class="emoji-large">🌸</div>
+                    <p>Elegância</p>
+                </div>
+                <div class="gallery-emoji">
+                    <div class="emoji-large">✨</div>
+                    <p>Perfeição</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Minimalista -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>BEAUTY NAILS</h3>
+                </div>
+                <div class="footer-info">
+                    <p>Rua 0001, 0 - SP</p>
+                    <p><a href="https://wa.me/5511922048764" target="_blank">(11) 92204-8764</a></p>
+                    <p><a href="mailto:contato@beautynails.com.br">contato@beautynails.com.br</a></p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/beautynailssp" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511922048764" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beauty Nails. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="public/js/minimal-script.js"></script>
+</body>
+</html>
